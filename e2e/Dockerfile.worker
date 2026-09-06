@@ -16,4 +16,4 @@ COPY ${WRANGLER_TOML} wrangler.toml
 
 EXPOSE 8787
 
-CMD ["pnpm", "exec", "wrangler", "dev", "--port", "8787", "--ip", "0.0.0.0"]
+CMD ["pnpm", "exec", "wrangler", "dev", "--port", "8787", "--ip", "0.0.0.0", "--test-scheduled"]
